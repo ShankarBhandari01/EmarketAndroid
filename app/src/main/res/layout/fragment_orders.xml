@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserInterface.Orders">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20sp"
+                app:cardBackgroundColor="#5809CF41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="72dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/ic_baseline_pending_24" />
+
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="#A2000000"
+                    android:text="Your Order for  apple for apple farm is "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="227dp"
+                    android:layout_height="128dp"
+              android:layout_margin="60sp"
+                    android:src="@drawable/img_5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="61dp"
+                    android:layout_gravity="start|bottom"
+                    android:text="view"
+                    android:textSize="20dp"
+                    app:backgroundTint="@color/red"
+                    app:cornerRadius="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20sp"
+                app:cardBackgroundColor="#5809CF41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="72dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/ic_baseline_pending_24" />
+
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="#A2000000"
+                    android:text="Your Order for  apple for apple farm is "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="227dp"
+                    android:layout_height="128dp"
+                    android:layout_margin="60sp"
+                    android:src="@drawable/img_5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="61dp"
+                    android:layout_gravity="start|bottom"
+                    android:text="view"
+                    android:textSize="20dp"
+                    app:backgroundTint="@color/red"
+                    app:cornerRadius="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
