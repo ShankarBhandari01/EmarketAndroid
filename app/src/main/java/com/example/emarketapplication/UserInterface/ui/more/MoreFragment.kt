@@ -1,5 +1,6 @@
 package com.example.emarketapplication.UserInterface.ui.more
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.fragment.app.Fragment
 import com.example.emarketapplication.R
+import com.example.emarketapplication.UserInterface.MapsActivity
 
 
 class MoreFragment : Fragment() {
@@ -16,6 +18,7 @@ class MoreFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,9 +36,12 @@ class MoreFragment : Fragment() {
         }
 
         listView.adapter = adapter
-       listView.setOnItemClickListener { _, _, _, _ ->
-
-       }
+        listView.setOnItemClickListener { adapterView, view, i, l ->
+            val position = i
+            if (position == 3) {
+                startActivity(Intent(context, MapsActivity::class.java))
+            }
+        }
         return view
     }
 
